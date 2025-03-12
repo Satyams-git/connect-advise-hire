@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Instagram, Twitter, Facebook, Linkedin, Github } from 'lucide-react';
 
@@ -11,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center space-x-2 mb-6">
-              <span className="text-xl font-semibold tracking-tight">ReferConnect</span>
+              <span className="text-xl font-semibold tracking-tight">Skilllogic.In</span>
             </Link>
             <p className="text-muted-foreground mb-6 max-w-md">
               Connecting job seekers with company insiders for referrals, mentorship, and career growth opportunities.
@@ -116,7 +115,7 @@ const Footer = () => {
 
         <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm mb-4 md:mb-0">
-            © {currentYear} ReferConnect. All rights reserved.
+            © {currentYear} Skilllogic.In. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <Link to="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">

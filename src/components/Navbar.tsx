@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 md:px-8">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2">
-            <span className="text-xl font-semibold tracking-tight">ReferConnect</span>
+            <span className="text-xl font-semibold tracking-tight">Skilllogic.In</span>
           </Link>
 
           {/* Desktop Navigation */}
