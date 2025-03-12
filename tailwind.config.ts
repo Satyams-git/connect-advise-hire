@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,20 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				brand: {
+					'50': '#f2f7ff',
+					'100': '#e6eeff',
+					'200': '#c9ddff',
+					'300': '#a7c4ff',
+					'400': '#7ea0ff',
+					'500': '#6378ff',
+					'600': '#3b4df7',
+					'700': '#2a3ade',
+					'800': '#2733b4',
+					'900': '#26308f',
+					'950': '#1a1f4f',
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,12 +98,30 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+				'pulse-slow': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.8' },
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' },
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-slow': 'pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+				'float': 'float 6s ease-in-out infinite',
+			},
+			fontFamily: {
+				sans: ['Inter', 'sans-serif'],
+			},
+			boxShadow: {
+				'subtle': '0 2px 10px rgba(0, 0, 0, 0.05)',
+				'elevation': '0 4px 20px rgba(0, 0, 0, 0.08)',
+				'soft': '0 10px 30px rgba(0, 0, 0, 0.04)',
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
