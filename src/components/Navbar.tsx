@@ -56,9 +56,11 @@ const Navbar = () => {
             <Button variant="outline" className="btn-hover-effect">
               Sign In
             </Button>
-            <Button className="bg-brand-600 hover:bg-brand-700 btn-hover-effect">
-              Get Started
-            </Button>
+            <Link to="/signup">
+              <Button className="bg-brand-600 hover:bg-brand-700 btn-hover-effect">
+                Get Started
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -117,9 +119,11 @@ const Navbar = () => {
             <Button variant="outline" className="w-full">
               Sign In
             </Button>
-            <Button className="w-full bg-brand-600 hover:bg-brand-700">
-              Get Started
-            </Button>
+            <Link to="/signup" className="w-full">
+              <Button className="w-full bg-brand-600 hover:bg-brand-700">
+                Get Started
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
